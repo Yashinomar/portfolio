@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <a href="{{ url_for('index') }}" class="logo" >John<span>.</span></a>
+        <nav class="navbar">
+            <a href="{{ url_for('index') }}" class="active">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+        </nav>
+        <a href="#" class="contact">Contact</a>
+    </header>
+    <section class="home">
+        <div class="content">
+            <h3>Hello<span>!</span></h3>
+            <h1>I am <span>John <br></span>
+                 computer science student</h1>
+                 <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    A magni, unde voluptatum animi fuga blanditiis veritatis eum ipsa error fugit,
+                    distinctio dolorum ullam doloribus, atque architecto? Voluptatibus velit eaque temporibus?
+                 </p>
+        </div>
+        <div class="img">
+            <img src="/static/assect/profile-pic.png" alt="">
+        </div>
+    </section>
+
+</body>
+</html>
